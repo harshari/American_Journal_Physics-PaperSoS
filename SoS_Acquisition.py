@@ -6,7 +6,7 @@ import time
 
 #comPort=input("Com Port :- ")
 #comPort="com"+comPort
-arduinoData=serial.Serial('/dev/tty.wchusbserial1410',115200)
+arduinoData=serial.Serial('/dev/tty.wchusbserial1410',115200) #COMPort
 date_string = time.strftime("%d-%m-%y-%H:%M")
 def is_Int(s):
     try:
@@ -101,21 +101,3 @@ for i in range(counter):
 #if(again=='t'):
 #capture()
 
-
-    
-#if
-''' 
-
-    fig, ax1 = plt.subplots() # fig : figure object, ax : Axes object
-    ax1.plot(time, a, 'r-')
-    ax1.set_xlabel('x label')
-    ax1.set_ylabel('y label')
-    ax1.set_title("I am compatible with multithreading")
-    plt.show()
-
-check = input()
-while check != 'a':
-    pass
-    cd Desktop
-    python "Lenz's_Law_Python.py"
-    '''
